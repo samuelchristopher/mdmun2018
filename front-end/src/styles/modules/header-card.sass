@@ -1,0 +1,36 @@
+.header-card
+  +e('container')
+    margin: 20px
+    background: $primary-color
+    border-radius: 20px
+    box-shadow: 0px 13px 114px 0px rgba(0, 0, 0, 0.35)
+    overflow: hidden
+    position: relative
+    max-width: 450px
+
+  +e('title')
+    color: white
+    font-family: 'Abril Fatface', serif
+    padding: 20px 20px 0 20px
+    margin: 0 auto
+
+  +e('tagline')
+    color: darken($primary-color, 50%)
+    text-transform: uppercase
+    opacity: .5
+    padding: 0 20px
+    margin: 10px auto
+
+  +e('button')
+    margin: 10px 0 20px 20px
+
+  +e('side-image')
+    width: 150px
+    height: 150px
+    border-radius: 100%
+    position: absolute
+    right: -20px
+    bottom: -32px
+    background: url('images/md-logo.png')
+    background-position: top
+    background-size: cover
