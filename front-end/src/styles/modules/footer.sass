@@ -1,0 +1,26 @@
+.footer
+  display: flex
+  flex-direction: column
+  width: 100%
+  justify-content: center
+  align-items: center
+  background: $primary-color
+
+  +e('links-container')
+    display: flex
+    justify-content: space-around
+    align-items: center
+    width: 100%
+
+  +e('link')
+    font-family: 'Open Sans', sans-serif
+    text-transform: uppercase
+    color: rgba(0,0,0,0.5)
+    font-weight: bold
+
+    &:active
+      color: rgba(0,0,0,0.8)
+
+  +e('copyright')
+    text-transform: capitalize
+    margin: 20px
