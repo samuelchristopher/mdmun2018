@@ -1,0 +1,35 @@
+.founders-message
+  +e('container')
+    display: flex
+    flex-direction: column
+    justify-content: center
+    width: 90%
+    margin: 0 auto
+    max-width: 450px
+  +e('image-container')
+    text-align: center
+  +e('image')
+    width: 100px
+    height: 100px
+    border: 5px solid $primary-color
+    border-radius: 60px
+    margin: 20px auto
+    background: url('images/founder-image.jpg')
+    background-position: -55px center
+  +e('name')
+    font-weight: bold
+    margin-bottom: 10px
+  +e('title')
+    font-size: 15px
+  +e('text-container')
+    position: relative
+  +e('short-text')
+    text-align: center
+  +e('gradient-cover')
+    width: 100%
+    height: 70px
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(0,212,255,0) 100%)
+    position: absolute
+    bottom: 0
+  +e('button')
+    margin: 20px 40px
