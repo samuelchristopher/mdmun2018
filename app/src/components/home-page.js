@@ -205,8 +205,18 @@ class HomePage extends PageViewElement {
         <p class="section-title">get started</p>
         <div class="quick-links__link regulations-image"><a class="quick-link__title" href="/intro">
             <h1>MDMUN</h1></a></div>
-        <div class="quick-links__link"><a class="quick-link__title" href="">
-            <h1> topics</h1></a></div>
+        <div class="quick-links__link"><a class="quick-link__title" href="/human-rights">
+            <h1>Human Rights</h1></a></div>
+        <div class="quick-links__link"><a class="quick-link__title" href="/security-council">
+            <h1>Security Council</h1></a></div>
+        <div class="quick-links__link"><a class="quick-link__title" href="/economic-social">
+            <h1>Economic Social</h1></a></div>
+        <div class="quick-links__link"><a class="quick-link__title" href="/political">
+            <h1>Political</h1></a></div>
+        <div class="quick-links__link"><a class="quick-link__title" href="/topics">
+            <h1>Topics</h1></a></div>
+        <div class="quick-links__link"><a class="quick-link__title" href="/rules-and-regulations">
+            <h1>Rules and Regulations</h1></a></div>
       </section>
       <section class="founders-message__container">
         <p class="section-title">founder's message</p>

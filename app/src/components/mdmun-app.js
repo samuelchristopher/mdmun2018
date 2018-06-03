@@ -172,7 +172,7 @@ class MDMUNApp extends connect(store)(LitElement) {
       <nav class="toolbar-list">
         <a selected?="${_page === 'home'}" href="/home">Home</a>
         <a selected?="${_page === 'intro'}" href="/intro">MDMUN</a>
-        <a selected?="${_page === 'view2'}" href="/view2">View Two</a>
+        <a selected?="${_page === 'topics'}" href="/topics">Topics</a>
         <a selected?="${_page === 'view3'}" href="/view3">View Three</a>
       </nav>
     </app-header>
@@ -183,7 +183,7 @@ class MDMUNApp extends connect(store)(LitElement) {
       <nav class="drawer-list">
         <a selected?="${_page === 'home'}" href="/home">Home</a>
         <a selected?="${_page === 'intro'}" href="/intro">MDMUN</a>
-        <a selected?="${_page === 'view2'}" href="/view2">View Two</a>
+        <a selected?="${_page === 'topics'}" href="/topics">Topics</a>
         <a selected?="${_page === 'view3'}" href="/view3">View Three</a>
       </nav>
     </app-drawer>
@@ -192,7 +192,7 @@ class MDMUNApp extends connect(store)(LitElement) {
     <main class="main-content">
       <home-page class="page" active?="${_page === 'home'}"></home-page>
       <intro-page class="page" active?="${_page === 'intro'}"></intro-page>
-      <my-view3 class="page" active?="${_page === 'view3'}"></my-view3>
+      <topics-page class="page" active?="${_page === 'topics'}"></topics-page>
       <my-view404 class="page" active?="${_page === 'view404'}"></my-view404>
     </main>
 
