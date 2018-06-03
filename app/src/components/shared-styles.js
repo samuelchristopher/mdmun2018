@@ -1,18 +1,8 @@
-/**
-@license
-Copyright (c) 2018 The Polymer Project Authors. All rights reserved.
-This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
-The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
-The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
-Code distributed by Google as part of the polymer project is also
-subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
-*/
-
 import { html } from '@polymer/lit-element';
 
 export const SharedStyles = html`
 <style>
-  :host {
+  /* :host {
     display: block;
     box-sizing: border-box;
   }
@@ -20,9 +10,9 @@ export const SharedStyles = html`
   section {
     padding: 24px;
     background: var(--app-section-odd-color);
-  }
+  } */
 
-  section > * {
+  /* section > * {
     max-width: 600px;
     margin-right: auto;
     margin-left: auto;
@@ -55,6 +45,35 @@ export const SharedStyles = html`
     color: var(--app-light-text-color);
     font-size: 30px;
     line-height: 64px;
-  }
+  } */
+   /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */@import url(https://fonts.googleapis.com/css?family=Abril+Fatface|Open+Sans:400,700);button,hr,input{overflow:visible}progress,sub,sup{vertical-align:baseline}html{line-height:1.15;-webkit-text-size-adjust:100%}h1{font-size:2em;margin:.67em 0}hr{-webkit-box-sizing:content-box;box-sizing:content-box;height:0}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}a{background-color:transparent}abbr[title]{border-bottom:none;-webkit-text-decoration:underline dotted;text-decoration:underline dotted}b,strong{font-weight:bolder}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:ButtonText dotted 1px}fieldset{padding:.35em .75em .625em}legend{-webkit-box-sizing:border-box;box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{-webkit-box-sizing:border-box;box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details{display:block}summary{display:list-item}[hidden],template{display:none}body{margin:0;font-family:'Open Sans',sans-serif}h1{font-family:'Abril Fatface',serif}
+  .section-title {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 30px; }
+
+  .button {
+    background-color: #f5bd34;
+    -webkit-box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.35);
+    box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.35);
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 0 20px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 60px; }
+    .logo__text {
+      font-family: 'Abril Fatface', serif;
+      font-size: 30px;
+    }
+
+    .logo__md {
+      color: #59b5a0; }
+    h1 {
+      font-family: 'Abril Fatface', sans-serif;
+    }
 </style>
 `;

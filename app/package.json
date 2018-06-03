@@ -1,11 +1,11 @@
 {
-  "name": "pwa-starter-kit",
-  "version": "0.8.0",
+  "name": "mdmun",
+  "version": "0.0.1",
   "contributors": [
-    "The Polymer Authors"
+    "Samuel Paul Christopher"
   ],
   "license": "BSD-3-Clause",
-  "repository": "Polymer/pwa-starter-kit",
+  "repository": "samuelchristopher/mdmun2018",
   "scripts": {
     "start": "polymer serve",
     "build": "npm run build:prpl-server && npm run build:static",

@@ -1,13 +1,3 @@
-/**
-@license
-Copyright (c) 2018 The Polymer Project Authors. All rights reserved.
-This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
-The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
-The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
-Code distributed by Google as part of the polymer project is also
-subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
-*/
-
 import { LitElement, html } from '@polymer/lit-element';
 import { setPassiveTouchGestures } from '@polymer/polymer/lib/utils/settings.js';
 import { connect } from 'pwa-helpers/connect-mixin.js';
@@ -33,12 +23,14 @@ import '@polymer/app-layout/app-header/app-header.js';
 import '@polymer/app-layout/app-scroll-effects/effects/waterfall.js';
 import '@polymer/app-layout/app-toolbar/app-toolbar.js';
 import { menuIcon } from './my-icons.js';
+import { SharedStyles } from './shared-styles.js';
 import './snack-bar.js';
 
-class MyApp extends connect(store)(LitElement) {
+class MDMUNApp extends connect(store)(LitElement) {
   _render({appTitle, _page, _drawerOpened, _snackbarOpened, _offline}) {
     // Anything that's related to rendering should be done in here.
     return html`
+    ${SharedStyles}
     <style>
       :host {
         --app-drawer-width: 256px;
@@ -76,9 +68,6 @@ class MyApp extends connect(store)(LitElement) {
       }
 
       [main-title] {
-        font-family: 'Pacifico';
-        text-transform: lowercase;
-        font-size: 30px;
         /* In the narrow layout, the toolbar is offset by the width of the
         drawer button, and the text looks not centered. Add a padding to
         match that button */
@@ -132,10 +121,10 @@ class MyApp extends connect(store)(LitElement) {
         color: var(--app-drawer-selected-color);
       }
 
-      .main-content {
+      /* .main-content {
         padding-top: 64px;
         min-height: 100vh;
-      }
+      } */
 
       .page {
         display: none;
@@ -145,12 +134,12 @@ class MyApp extends connect(store)(LitElement) {
         display: block;
       }
 
-      footer {
+      /* footer {
         padding: 24px;
         background: var(--app-drawer-background-color);
         color: var(--app-drawer-text-color);
         text-align: center;
-      }
+      } */
 
       /* Wide layout: when the viewport width is bigger than 460px, layout
       changes to a wide layout. */
@@ -163,28 +152,25 @@ class MyApp extends connect(store)(LitElement) {
           display: none;
         }
 
-        .main-content {
-          padding-top: 107px;
-        }
-
         /* The drawer button isn't shown in the wide layout, so we don't
         need to offset the title */
         [main-title] {
           padding-right: 0px;
         }
       }
+
     </style>
 
     <!-- Header -->
     <app-header condenses reveals effects="waterfall">
       <app-toolbar class="toolbar-top">
         <button class="menu-btn" title="Menu" on-click="${_ => store.dispatch(updateDrawerState(true))}">${menuIcon}</button>
-        <div main-title>${appTitle}</div>
+        <div main-title><h3 class="logo__text"> <span class="logo__md">MD</span>MUN</h3></div>
       </app-toolbar>
 
       <!-- This gets hidden on a small screen-->
       <nav class="toolbar-list">
-        <a selected?="${_page === 'view1'}" href="/view1">View One</a>
+        <a selected?="${_page === 'intro'}" href="/intro">Introduction to MDMUN</a>
         <a selected?="${_page === 'view2'}" href="/view2">View Two</a>
         <a selected?="${_page === 'view3'}" href="/view3">View Three</a>
       </nav>
@@ -194,7 +180,7 @@ class MyApp extends connect(store)(LitElement) {
     <app-drawer opened="${_drawerOpened}"
         on-opened-changed="${e => store.dispatch(updateDrawerState(e.target.opened))}">
       <nav class="drawer-list">
-        <a selected?="${_page === 'view1'}" href="/view1">View One</a>
+        <a selected?="${_page === 'intro'}" href="/intro">Introduction to MDMUN</a>
         <a selected?="${_page === 'view2'}" href="/view2">View Two</a>
         <a selected?="${_page === 'view3'}" href="/view3">View Three</a>
       </nav>
@@ -202,15 +188,11 @@ class MyApp extends connect(store)(LitElement) {
 
     <!-- Main content -->
     <main class="main-content">
-      <my-view1 class="page" active?="${_page === 'view1'}"></my-view1>
+      <home-page class="page" active?="${_page === 'home'}"></home-page>
       <my-view2 class="page" active?="${_page === 'view2'}"></my-view2>
       <my-view3 class="page" active?="${_page === 'view3'}"></my-view3>
       <my-view404 class="page" active?="${_page === 'view404'}"></my-view404>
     </main>
-
-    <footer>
-      <p>Made with &hearts; by the Polymer team.</p>
-    </footer>
 
     <snack-bar active?="${_snackbarOpened}">
         You are now ${_offline ? 'offline' : 'online'}.</snack-bar>
@@ -243,7 +225,7 @@ class MyApp extends connect(store)(LitElement) {
 
   _didRender(properties, changeList) {
     if ('_page' in changeList) {
-      const pageTitle = properties.appTitle + ' - ' + changeList._page;
+      const pageTitle = 'MDMUN - ' + changeList._page;
       updateMetadata({
           title: pageTitle,
           description: pageTitle
@@ -260,4 +242,4 @@ class MyApp extends connect(store)(LitElement) {
   }
 }
 
-window.customElements.define('my-app', MyApp);
+window.customElements.define('mdmun-app', MDMUNApp);

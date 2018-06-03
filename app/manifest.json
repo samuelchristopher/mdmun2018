@@ -1,11 +1,11 @@
 {
-  "name": "My App",
-  "short_name": "My App",
-  "description": "My App description",
+  "name": "MDMUN",
+  "short_name": "MDMUN",
+  "description": "MDMUN App",
   "start_url": "/",
   "display": "standalone",
-  "theme_color": "#3f51b5",
-  "background_color": "#3f51b5",
+  "theme_color": "#59b5a0",
+  "background_color": "#59b5a0",
   "icons": [
     {
       "src": "images/manifest/icon-192x192.png",
