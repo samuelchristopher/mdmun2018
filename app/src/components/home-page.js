@@ -18,7 +18,7 @@ class HomePage extends PageViewElement {
         position: relative;
         max-width: 450px;
         z-index: -1;
-        margin: 110px 20px 20px 20px;
+        margin: 0px 20px 20px 20px;
        }
 
       .header-card__title {
@@ -202,9 +202,9 @@ class HomePage extends PageViewElement {
           <p class="button__text">view schedule</p></a>
       </section>
       <section class="quick-links__container">
-        <p class="section-title">quick links</p>
-        <div class="quick-links__link regulations-image"><a class="quick-link__title" href="">
-            <h1> regulations</h1></a></div>
+        <p class="section-title">get started</p>
+        <div class="quick-links__link regulations-image"><a class="quick-link__title" href="/intro">
+            <h1>MDMUN</h1></a></div>
         <div class="quick-links__link"><a class="quick-link__title" href="">
             <h1> topics</h1></a></div>
       </section>

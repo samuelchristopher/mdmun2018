@@ -19,7 +19,7 @@ export const navigate = (path) => (dispatch) => {
 const loadPage = (page) => async (dispatch) => {
   // If the page is invalid, set to 404. The is also a good spot to check
   // other location things like sub-path or query params.
-  if (['home', 'view2', 'view3'].indexOf(page) === -1) {
+  if (['home', 'intro', 'view3'].indexOf(page) === -1) {
     page = 'view404';
   }
 
@@ -31,8 +31,8 @@ const loadPage = (page) => async (dispatch) => {
       // Put code here that you want it to run every time when
       // navigate to view1 page and my-view1.js is loaded
       break;
-    case 'view2':
-      await import('../components/my-view2.js');
+    case 'intro':
+      await import('../components/intro-page.js');
       break;
     case 'view3':
       await import('../components/my-view3.js');

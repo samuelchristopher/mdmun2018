@@ -75,5 +75,46 @@ export const SharedStyles = html`
     h1 {
       font-family: 'Abril Fatface', sans-serif;
     }
+
+    .main-content {
+      margin-top: 100px;
+    }
+
+    .normal-page-container {
+      margin: 20px auto;
+      max-width: 450px;
+      text-align: center;
+    }
+
+    .normal-page-body {
+      margin-top: 20px;
+      padding: 20px;
+    }
+
+    /* need to componentize */
+    .header-card__container {
+      background: #59b5a0;
+      border-radius: 20px;
+      -webkit-box-shadow: 0px 13px 114px 0px rgba(0, 0, 0, 0.35);
+      box-shadow: 0px 13px 114px 0px rgba(0, 0, 0, 0.35);
+      overflow: hidden;
+      position: relative;
+      max-width: 450px;
+      z-index: -1;
+      margin: 0px 20px 20px 20px;
+     }
+
+    .header-card__title {
+      color: white;
+      font-family: 'Abril Fatface', serif;
+      padding: 20px 20px 0 20px;
+      margin: 0 auto; }
+
+    .header-card__tagline {
+      color: #050a09;
+      text-transform: uppercase;
+      opacity: .5;
+      padding: 0 20px;
+      margin: 10px auto; }
 </style>
 `;

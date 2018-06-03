@@ -170,7 +170,8 @@ class MDMUNApp extends connect(store)(LitElement) {
 
       <!-- This gets hidden on a small screen-->
       <nav class="toolbar-list">
-        <a selected?="${_page === 'intro'}" href="/intro">Introduction to MDMUN</a>
+        <a selected?="${_page === 'home'}" href="/home">Home</a>
+        <a selected?="${_page === 'intro'}" href="/intro">MDMUN</a>
         <a selected?="${_page === 'view2'}" href="/view2">View Two</a>
         <a selected?="${_page === 'view3'}" href="/view3">View Three</a>
       </nav>
@@ -180,7 +181,8 @@ class MDMUNApp extends connect(store)(LitElement) {
     <app-drawer opened="${_drawerOpened}"
         on-opened-changed="${e => store.dispatch(updateDrawerState(e.target.opened))}">
       <nav class="drawer-list">
-        <a selected?="${_page === 'intro'}" href="/intro">Introduction to MDMUN</a>
+        <a selected?="${_page === 'home'}" href="/home">Home</a>
+        <a selected?="${_page === 'intro'}" href="/intro">MDMUN</a>
         <a selected?="${_page === 'view2'}" href="/view2">View Two</a>
         <a selected?="${_page === 'view3'}" href="/view3">View Three</a>
       </nav>
@@ -189,7 +191,7 @@ class MDMUNApp extends connect(store)(LitElement) {
     <!-- Main content -->
     <main class="main-content">
       <home-page class="page" active?="${_page === 'home'}"></home-page>
-      <my-view2 class="page" active?="${_page === 'view2'}"></my-view2>
+      <intro-page class="page" active?="${_page === 'intro'}"></intro-page>
       <my-view3 class="page" active?="${_page === 'view3'}"></my-view3>
       <my-view404 class="page" active?="${_page === 'view404'}"></my-view404>
     </main>
