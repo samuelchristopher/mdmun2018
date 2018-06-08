@@ -87,7 +87,7 @@ class HomePage extends PageViewElement {
         background-position: fixed;
         background-size: cover; }
 
-      .parallax::after {
+      /* .parallax::after {
         /* Display and position the pseudo-element */
         content: " ";
         position: absolute;
@@ -103,7 +103,7 @@ class HomePage extends PageViewElement {
         /* Force the background image to fill the whole element. */
         background-size: 100%;
         /* Keep the image from overlapping sibling elements. */
-        z-index: -1; }
+        z-index: -1; } */
 
       .founders-message__container {
         display: -webkit-box;

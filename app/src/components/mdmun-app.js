@@ -199,9 +199,9 @@ class MDMUNApp extends connect(store)(LitElement) {
           outline: none;
         }
 
-        /* main {
+        main {
           min-height: 100vh;
-        } */
+        }
 
     </style>
 
@@ -217,6 +217,8 @@ class MDMUNApp extends connect(store)(LitElement) {
         <a selected?="${_page === 'home'}" href="/home">Home</a>
         <a selected?="${_page === 'intro'}" href="/intro">MDMUN</a>
         <a selected?="${_page === 'topics'}" href="/topics">Topics</a>
+        <a selected?="${_page === 'rules-of-procedure'}" href="/rules-of-procedure">RoP</a>
+        <a selected?="${_page === 'human-rights'}" href="/human-rights">Human Rights</a>
         <a selected?="${_page === 'view3'}" href="/view3">View Three</a>
       </nav>
     </app-header>
@@ -229,6 +231,7 @@ class MDMUNApp extends connect(store)(LitElement) {
         <a selected?="${_page === 'intro'}" href="/intro">MDMUN</a>
         <a selected?="${_page === 'topics'}" href="/topics">Topics</a>
         <a selected?="${_page === 'rules-of-procedure'}" href="/rules-of-procedure">Rules of Procedure</a>
+        <a selected?="${_page === 'rules-of-procedure'}" href="/human-rights">Human Rights</a>
       </nav>
     </app-drawer>
 
@@ -239,6 +242,7 @@ class MDMUNApp extends connect(store)(LitElement) {
       <topics-page class="page" active?="${_page === 'topics'}"></topics-page>
       <rop-page class="page" active?="${_page === 'rules-of-procedure'}"></rop-page>
       <founder-message class="page" active?="${_page === 'founder-message'}"></founder-message>
+      <hr-council-page class="page" active?="${_page === 'human-rights'}"></hr-council-page>
       <my-view404 class="page" active?="${_page === 'view404'}"></my-view404>
     </main>
 
