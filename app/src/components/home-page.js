@@ -139,8 +139,11 @@ class HomePage extends PageViewElement {
       .founders-message__title {
         font-size: 15px; }
 
-      .founders-message__text-container {
-        position: relative; }
+        .founders-message__text-container {
+          position: relative;
+          z-index: -1;
+         }
+
 
       .founders-message__short-text {
         text-align: center; }
@@ -170,6 +173,10 @@ class HomePage extends PageViewElement {
         <p class="section-title">get started</p>
         <div class="quick-links__link regulations-image"><a class="quick-link__title" href="/intro">
             <h1>MDMUN</h1></a></div>
+        <div class="quick-links__link"><a class="quick-link__title" href="/topics">
+        <h1>Topics</h1></a></div>
+        <div class="quick-links__link"><a class="quick-link__title" href="/rules-of-procedure">
+        <h1>Rules of Procedure</h1></a></div>
         <div class="quick-links__link"><a class="quick-link__title" href="/human-rights">
             <h1>Human Rights</h1></a></div>
         <div class="quick-links__link"><a class="quick-link__title" href="/security-council">
@@ -178,10 +185,6 @@ class HomePage extends PageViewElement {
             <h1>Economic Social</h1></a></div>
         <div class="quick-links__link"><a class="quick-link__title" href="/political">
             <h1>Political</h1></a></div>
-        <div class="quick-links__link"><a class="quick-link__title" href="/topics">
-            <h1>Topics</h1></a></div>
-        <div class="quick-links__link"><a class="quick-link__title" href="/rules-of-procedure">
-            <h1>Rules of Procedure</h1></a></div>
       </section>
       <section class="founders-message__container">
         <p class="section-title">founder's message</p>
@@ -193,7 +196,7 @@ class HomePage extends PageViewElement {
         <div class="founders-message__text-container">
           <p class="founders-message__short-text">My name is Kimberley, I am a former student of Maktab Duli, Class of 2015, and I am also the Main Organizer of MD MUN 2016. Throughout my time in Maktab Duli and secondary school years, I have participated in many public speaking competitions and events, including being the title holder of Brunei's National Senior Level English Debate Competition 2015, however, some of my most memorable experiences through these years are my MUN experiences; which is why I was inspired to organize my very own.</p>
           <div class="founders-message__gradient-cover"> </div>
-        </div><a class="button founders-message__button">
+        </div><a class="button founders-message__button" href="/founder-message">
           <p class="button__text">view full message</p></a>
       </section>
 

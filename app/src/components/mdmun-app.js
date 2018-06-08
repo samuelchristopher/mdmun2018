@@ -199,9 +199,9 @@ class MDMUNApp extends connect(store)(LitElement) {
           outline: none;
         }
 
-        main {
+        /* main {
           min-height: 100vh;
-        }
+        } */
 
     </style>
 
@@ -238,6 +238,7 @@ class MDMUNApp extends connect(store)(LitElement) {
       <intro-page class="page" active?="${_page === 'intro'}"></intro-page>
       <topics-page class="page" active?="${_page === 'topics'}"></topics-page>
       <rop-page class="page" active?="${_page === 'rules-of-procedure'}"></rop-page>
+      <founder-message class="page" active?="${_page === 'founder-message'}"></founder-message>
       <my-view404 class="page" active?="${_page === 'view404'}"></my-view404>
     </main>
 
