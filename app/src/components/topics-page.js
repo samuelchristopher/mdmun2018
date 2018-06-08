@@ -12,6 +12,20 @@ class TopicsPage extends PageViewElement {
        b {
          color: #f5bd34;
        }
+       .question {
+         color: #f5bd34;
+         margin: 10px;
+       }
+       .topic__category {
+         color: #f5bd34;
+         text-align: center;
+         font-weight: bold;
+         text-transform: uppercase;
+       }
+
+       .topic__container:not(:first-child) {
+         margin: 50px auto;
+       }
       </style>
       <section class="">
         <section class="header-card__container">
@@ -19,41 +33,56 @@ class TopicsPage extends PageViewElement {
           <h3 class="header-card__tagline">What will you be working on?</h3>
         </section>
         <div class="normal-page-body">
-          <div class="topic">
-            <p class="section-title">human rights</p>
-            <ol>
-              <li>Syrian Refugee Crisis.</li>
-              <li>Ending abuse, exploitation, trafficking and all forms of violence against and torture against children.</li>
-            </ol>
-            <b>Countries</b>
-            <div class="countries">South Africa, Phillippines, China, Mexico, Iran, Russia, France, Germany, UK, Lebanon, USA, Syria, Singapore, Japan, Nigeria, India, Zimbabwe</div>
+          <div class="topic__container">
+            <p class="topic__category">human rights</p>
+            <ul>
+              <li class="topic">
+                <h1>Syrian Refugee Crisis</h1>
+                <p class="topic-desc">The question of effectively managing and coordinating the flow and livelihood of refugees in the new host countries.</p>
+              </li>
+              <li class="topic">
+                <h1>Reinforcement of children's fundamental rights</h1>
+                <p class="topic-desc">The question of ending abuse, exploitation, trafficking and all forms of violence and torture against children.</p>
+              </li>
+            </ul>
           </div>
-          <div class="topic">
-            <p class="section-title">economic social</p>
-            <ol>
-              <li>Strenghtening the coordination of humanitarian assistance.</li>
-              <li>Promoting the Political, Socioeconomic, and Cultural Rights of Indigenous Peoples.</li>
-            </ol>
-            <b>Countries</b>
-            <div class="countries">Brunei, Netherlands, South Korea, Burundi, Maldives, Congo, Malaysia, Ghana</div>
+          <div class="topic__container">
+            <p class="topic__category">security</p>
+            <ul>
+              <li class="topic">
+                <h1>Resolving the Syrian War</h1>
+                <p class="topic-desc">The question of resolving the ongoing conflict in Syria and alleviating the affects of the war.</p>
+              </li>
+              <li class="topic">
+                <h1>Illicit transnational crimes</h1>
+                <p class="topic-desc">The question of reducing illicit financial and arm flows, and combatting all forms of organised crime.</p>
+              </li>
+            </ul>
           </div>
-          <div class="topic">
-            <p class="section-title">security</p>
-            <ol>
-              <li>Resolving the Syrian War.</li>
-              <li>Reducing illicit financial and arm flows, and combatting all forms or organized crime.</li>
-            </ol>
-            <b>Countries</b>
-            <div class="countries">Iraq, Iran, Portugal, Ghana, Sierra Leone, Australia, Germany, Switzerland, USA</div>
+          <div class="topic__container">
+            <p class="topic__category">political</p>
+            <ul>
+              <li class="topic">
+                <h1>Immunities & Criminal Proceedings</h1>
+                <p class="topic-desc">The question of effectively reinforcing and implementing international laws in carrying out criminal proceedings.</p>
+              </li>
+              <li class="topic">
+                <p class="topic-desc">The question of substantially reducing corruption and bribery in all forms.</p>
+              </li>
+            </ul>
           </div>
-          <div class="topic">
-            <p class="section-title">political</p>
-            <ol>
-              <li>Effectively reinforcing and implementing international laws in carrying out criminal proceedings.</li>
-              <li>Substantially reduce corruption and bribery in all forms.</li>
-            </ol>
-            <b>Countries</b>
-            <div class="countries">South Africa, Sudan</div>
+          <div class="topic__container">
+            <p class="topic__category">eco-soc</p>
+            <ul>
+              <li class="topic">
+                <h1>Humanitarian aid and assistance</h1>
+                <p class="topic-desc">The question of strengthening the coordination of emergency humanitarian assistance of the United Nations.</p>
+              </li>
+              <li class="topic">
+                <h1>Indigenous rights</h1>
+                <p class="topic-desc">The question of promoting the political, socioeconomic and cultural rights of indigenous peoples.</p>
+              </li>
+            </ul>
           </div>
         </div>
       </section>

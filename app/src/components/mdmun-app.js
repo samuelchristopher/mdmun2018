@@ -199,6 +199,10 @@ class MDMUNApp extends connect(store)(LitElement) {
           outline: none;
         }
 
+        main {
+          min-height: 100vh;
+        }
+
     </style>
 
     <!-- Header -->
