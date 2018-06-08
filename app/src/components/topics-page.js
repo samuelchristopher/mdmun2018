@@ -27,7 +27,7 @@ class TopicsPage extends PageViewElement {
          margin: 50px auto;
        }
       </style>
-      <section class="">
+      <section>
         <section class="header-card__container">
           <h1 class="header-card__title">Topics</h1>
           <h3 class="header-card__tagline">What will you be working on?</h3>

@@ -19,7 +19,7 @@ export const navigate = (path) => (dispatch) => {
 const loadPage = (page) => async (dispatch) => {
   // If the page is invalid, set to 404. The is also a good spot to check
   // other location things like sub-path or query params.
-  if (['home', 'intro', 'topics'].indexOf(page) === -1) {
+  if (['home', 'intro', 'topics', 'rules-of-procedure'].indexOf(page) === -1) {
     page = 'view404';
   }
 
@@ -36,6 +36,9 @@ const loadPage = (page) => async (dispatch) => {
       break;
     case 'topics':
       await import('../components/topics-page.js');
+      break;
+    case 'rules-of-procedure':
+      await import('../components/rop-page.js');
       break;
     default:
       await import('../components/my-view404.js');

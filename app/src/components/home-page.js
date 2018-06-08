@@ -73,7 +73,7 @@ class HomePage extends PageViewElement {
       .quick-link__title {
         color: white;
         text-decoration: none;
-        text-transform: capitalize;
+        /* text-transform: capitalize; */
         text-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
         padding-left: 20px;
          }
@@ -158,7 +158,7 @@ class HomePage extends PageViewElement {
       .founders-message__button {
         margin: 20px 40px; }
 
-      
+
       </style>
       <section class="header-card__container">
         <h1 class="header-card__title">Peace, Justice and Strong Institutions</h1>
@@ -180,8 +180,8 @@ class HomePage extends PageViewElement {
             <h1>Political</h1></a></div>
         <div class="quick-links__link"><a class="quick-link__title" href="/topics">
             <h1>Topics</h1></a></div>
-        <div class="quick-links__link"><a class="quick-link__title" href="/rules-and-regulations">
-            <h1>Rules and Regulations</h1></a></div>
+        <div class="quick-links__link"><a class="quick-link__title" href="/rules-of-procedure">
+            <h1>Rules of Procedure</h1></a></div>
       </section>
       <section class="founders-message__container">
         <p class="section-title">founder's message</p>

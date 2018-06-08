@@ -228,7 +228,7 @@ class MDMUNApp extends connect(store)(LitElement) {
         <a selected?="${_page === 'home'}" href="/home">Home</a>
         <a selected?="${_page === 'intro'}" href="/intro">MDMUN</a>
         <a selected?="${_page === 'topics'}" href="/topics">Topics</a>
-        <a selected?="${_page === 'view3'}" href="/view3">View Three</a>
+        <a selected?="${_page === 'rules-of-procedure'}" href="/rules-of-procedure">Rules of Procedure</a>
       </nav>
     </app-drawer>
 
@@ -237,6 +237,7 @@ class MDMUNApp extends connect(store)(LitElement) {
       <home-page class="page" active?="${_page === 'home'}"></home-page>
       <intro-page class="page" active?="${_page === 'intro'}"></intro-page>
       <topics-page class="page" active?="${_page === 'topics'}"></topics-page>
+      <rop-page class="page" active?="${_page === 'rules-of-procedure'}"></rop-page>
       <my-view404 class="page" active?="${_page === 'view404'}"></my-view404>
     </main>
 
