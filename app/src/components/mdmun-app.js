@@ -158,6 +158,42 @@ class MDMUNApp extends connect(store)(LitElement) {
           padding-right: 0px;
         }
       }
+      .footer {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        width: 100%;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        background: #59b5a0; }
+        .footer__links-container {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-pack: distribute;
+          justify-content: space-around;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          width: 100%; }
+        .footer__link {
+          font-family: 'Open Sans', sans-serif;
+          text-transform: uppercase;
+          color: rgba(0, 0, 0, 0.5);
+          font-weight: bold; }
+          .footer__link:active {
+            color: rgba(0, 0, 0, 0.8); }
+        .footer__copyright {
+          text-transform: capitalize;
+          margin: 20px; }
 
     </style>
 
@@ -195,6 +231,12 @@ class MDMUNApp extends connect(store)(LitElement) {
       <topics-page class="page" active?="${_page === 'topics'}"></topics-page>
       <my-view404 class="page" active?="${_page === 'view404'}"></my-view404>
     </main>
+
+    <footer class="footer">
+      <h3 class="logo__text">MDMUN</h3>
+      <!-- <div class="footer__links-container"><a class="footer__link" href="#">about</a><a class="footer__link" href="#">rules</a><a class="footer__link" href="#">contact</a></div> -->
+      <div class="footer__copyright">copyright 2018 </div>
+    </footer>
 
     <snack-bar active?="${_snackbarOpened}">
         You are now ${_offline ? 'offline' : 'online'}.</snack-bar>
