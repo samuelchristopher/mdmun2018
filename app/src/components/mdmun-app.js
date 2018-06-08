@@ -193,7 +193,11 @@ class MDMUNApp extends connect(store)(LitElement) {
             color: rgba(0, 0, 0, 0.8); }
         .footer__copyright {
           text-transform: capitalize;
-          margin: 20px; }
+          margin: 0 20px 20px 20px; }
+
+        a:focus, .menu-btn:focus {
+          outline: none;
+        }
 
     </style>
 
