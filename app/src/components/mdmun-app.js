@@ -231,7 +231,7 @@ class MDMUNApp extends connect(store)(LitElement) {
         <a selected?="${_page === 'intro'}" href="/intro">MDMUN</a>
         <a selected?="${_page === 'topics'}" href="/topics">Topics</a>
         <a selected?="${_page === 'rules-of-procedure'}" href="/rules-of-procedure">Rules of Procedure</a>
-        <a selected?="${_page === 'rules-of-procedure'}" href="/human-rights">Human Rights</a>
+        <a selected?="${_page === 'human-rights'}" href="/human-rights">Human Rights</a>
       </nav>
     </app-drawer>
 

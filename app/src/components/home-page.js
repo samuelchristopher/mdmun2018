@@ -68,7 +68,9 @@ class HomePage extends PageViewElement {
         -webkit-box-align: center;
         -ms-flex-align: center;
         align-items: center;
-        border-bottom: 10px dashed white; }
+        border-bottom: 10px dashed white;
+        text-decoration: none;
+       }
 
       .quick-link__title {
         color: white;
@@ -87,24 +89,6 @@ class HomePage extends PageViewElement {
         background-position: fixed;
         background-size: cover; }
 
-      /* .parallax::after {
-        /* Display and position the pseudo-element */
-        content: " ";
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        /* Move the pseudo-element back away from the camera,
-         * then scale it back up to fill the viewport.
-         * Because the pseudo-element is further away, it appears to move more slowly, like in real life. */
-        -webkit-transform: translateZ(-1px) scale(1.5);
-        transform: translateZ(-1px) scale(1.5);
-        /* Force the background image to fill the whole element. */
-        background-size: 100%;
-        /* Keep the image from overlapping sibling elements. */
-        z-index: -1; } */
-
       .founders-message__container {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -119,6 +103,18 @@ class HomePage extends PageViewElement {
         width: 90%;
         margin: 0 auto;
         max-width: 450px; }
+
+        /* .founders-message__container {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            padding: 0 20px;
+            max-width: 450px;
+        } */
 
       .founders-message__image-container {
         text-align: center; }
@@ -171,20 +167,20 @@ class HomePage extends PageViewElement {
       </section>
       <section class="quick-links__container">
         <p class="section-title">get started</p>
-        <div class="quick-links__link regulations-image"><a class="quick-link__title" href="/intro">
-            <h1>MDMUN</h1></a></div>
-        <div class="quick-links__link"><a class="quick-link__title" href="/topics">
-        <h1>Topics</h1></a></div>
-        <div class="quick-links__link"><a class="quick-link__title" href="/rules-of-procedure">
-        <h1>Rules of Procedure</h1></a></div>
-        <div class="quick-links__link"><a class="quick-link__title" href="/human-rights">
-            <h1>Human Rights</h1></a></div>
-        <div class="quick-links__link"><a class="quick-link__title" href="/security-council">
-            <h1>Security Council</h1></a></div>
-        <div class="quick-links__link"><a class="quick-link__title" href="/economic-social">
-            <h1>Economic Social</h1></a></div>
-        <div class="quick-links__link"><a class="quick-link__title" href="/political">
-            <h1>Political</h1></a></div>
+        <a class="quick-links__link regulations-image" href="/intro"><h1 class="quick-link__title">
+            MDMUN</h1></a>
+        <a class="quick-links__link" href="/topics"><h1 class="quick-link__title">
+        Topics</h1></a>
+        <a class="quick-links__link" href="/rules-of-procedure"><h1 class="quick-link__title">
+        Rules of Procedure</h1></a>
+        <a class="quick-links__link" href="/human-rights"><h1 class="quick-link__title">
+            Human Rights</h1></a>
+        <a class="quick-links__link" href="/security-council"><h1 class="quick-link__title">
+            Security Council</h1></a>
+        <a class="quick-links__link" href="/economic-social"><h1 class="quick-link__title">
+            Economic Social</h1></a>
+        <a class="quick-links__link" href="/political"><h1 class="quick-link__title">
+            Political</h1></a>
       </section>
       <section class="founders-message__container">
         <p class="section-title">founder's message</p>
