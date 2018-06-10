@@ -1,7 +1,11 @@
 import { html } from '@polymer/lit-element';
 import { PageViewElement } from './page-view-element.js';
-
-// These are the shared styles needed by this element.
+import './council-people.js';
+import { store } from '../store.js';
+import council from '../reducers/council.js';
+store.addReducers({
+  council
+})
 import { SharedStyles } from './shared-styles.js';
 
 class HRCouncilPage extends PageViewElement {
@@ -24,13 +28,6 @@ class HRCouncilPage extends PageViewElement {
           padding: 0px 20px 0 20px;
           margin: 0 auto;
         }
-
-        .council__people-category {
-          color: #f5bd34;
-          text-align: center;
-          font-weight: bold;
-          text-transform: uppercase;
-        }
       </style>
       <section>
         <section class="header-card__container council__header">
@@ -49,26 +46,8 @@ class HRCouncilPage extends PageViewElement {
          </div>
         </div>
         <div class="council__people-container">
-          <p class="council__people-category">Chairs</p>
-          <ol>
-            <li class="council__person">
-
-            </li>
-            <li class="council__person">
-
-            </li>
-          </ol>
-        </div>
-        <div class="council__people-container">
-          <p class="council__people-category">Members</p>
-          <ol>
-            <li class="council__person">
-
-            </li>
-            <li class="council__person">
-
-            </li>
-          </ol>
+          <council-people category="chairs" hr=true></council-people>
+          <council-people category="members" hr=true></council-people>
         </div>
       </section>
     `
