@@ -10,15 +10,27 @@ class HomePage extends PageViewElement {
       ${SharedStyles}
       <style>
       .header-card__container {
-        background: #59b5a0;
-        border-radius: 20px;
-        -webkit-box-shadow: 0px 13px 114px 0px rgba(0, 0, 0, 0.35);
-        box-shadow: 0px 13px 114px 0px rgba(0, 0, 0, 0.35);
-        overflow: hidden;
-        position: relative;
-        max-width: 450px;
-        z-index: -1;
-        margin: 0px 20px 20px 20px;
+        text-align: center;
+       background: #59b5a0;
+       border-radius: 20px;
+       -webkit-box-shadow: 0px 13px 114px 0px rgba(0, 0, 0, 0.35);
+       box-shadow: 0px 13px 114px 0px rgba(0, 0, 0, 0.35);
+       overflow: hidden;
+       position: relative;
+       max-width: 450px;
+       z-index: -1;
+       margin: 0px 20px 20px 20px;
+       height: 250px;
+       display: -webkit-box;
+       display: -ms-flexbox;
+       display: flex;
+       -webkit-box-orient: vertical;
+       -webkit-box-direction: normal;
+       -ms-flex-direction: column;
+               flex-direction: column;
+       -webkit-box-align: center;
+       -ms-flex-align: center;
+               align-items: center;
        }
 
       .header-card__title {
@@ -42,10 +54,9 @@ class HomePage extends PageViewElement {
         height: 150px;
         border-radius: 100%;
         position: absolute;
-        right: -20px;
-        bottom: -32px;
+        bottom: -30px;
         background: url("images/md-logo.png");
-        background-position: top;
+        background-position: center 5px;
         background-size: cover; }
 
       .quick-links__container {
@@ -157,14 +168,28 @@ class HomePage extends PageViewElement {
       .founders-message__button {
         margin: 20px 40px; }
 
-
+      .center-horizontally-container {
+        width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+      }
       </style>
       <section class="header-card__container">
         <h1 class="header-card__title">Peace, Justice and Strong Institutions</h1>
         <h3 class="header-card__tagline">sdg goal 16</h3>
-        <div class="header-card__side-image"></div><a class="button header-card__button">
-          <p class="button__text">view schedule</p></a>
+        <div class="header-card__side-image"></div>
       </section>
+      <div class="center-horizontally-container">
+        <a href="https://drive.google.com/open?id=1o8E3kXdmJoMxNX_rzbn4JSIlNZQJN-hG" target="_blank" class="button header-card__button">
+        <p class="button__text">view schedule</p></a>
+      </div>
       <section class="quick-links__container">
         <p class="section-title">get started</p>
         <a class="quick-links__link regulations-image" href="/intro"><h1 class="quick-link__title">
