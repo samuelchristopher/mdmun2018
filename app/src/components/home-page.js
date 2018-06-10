@@ -79,7 +79,6 @@ class HomePage extends PageViewElement {
         -webkit-box-align: center;
         -ms-flex-align: center;
         align-items: center;
-        border-bottom: 10px dashed white;
         text-decoration: none;
        }
 
@@ -180,6 +179,34 @@ class HomePage extends PageViewElement {
             -ms-flex-align: center;
                 align-items: center;
       }
+        .p-1 {
+          background-image: url('images/p-1.png');
+          background-size: cover;
+        }
+        .p-2 {
+          background-image: url('images/p-2.png');
+          background-size: cover;
+        }
+        .p-3 {
+          background-image: url('images/p-3.png');
+        }
+        .hr-1 {
+          background-image: url('images/hr-1.png');
+          background-size: cover;
+          background-position: center;
+        }
+        .sec-1 {
+          background-image: url('images/sec-1.png');
+          background-size: cover;
+        }
+        .ecosoc-1 {
+          background-image: url('images/ecosoc-1.png');
+          background-position: -20px;
+        }
+        .pol-1 {
+          background-size: cover;
+          background-image: url('images/pol-1.png');
+        }
       </style>
       <section class="header-card__container">
         <h1 class="header-card__title">Peace, Justice and Strong Institutions</h1>
@@ -192,19 +219,19 @@ class HomePage extends PageViewElement {
       </div>
       <section class="quick-links__container">
         <p class="section-title">get started</p>
-        <a class="quick-links__link regulations-image" href="/intro"><h1 class="quick-link__title">
+        <a class="quick-links__link p-1" href="/intro"><h1 class="quick-link__title">
             MDMUN</h1></a>
-        <a class="quick-links__link" href="/topics"><h1 class="quick-link__title">
+        <a class="quick-links__link p-2" href="/topics"><h1 class="quick-link__title">
         Topics</h1></a>
-        <a class="quick-links__link" href="/rules-of-procedure"><h1 class="quick-link__title">
+        <a class="quick-links__link p-3" href="/rules-of-procedure"><h1 class="quick-link__title">
         Rules of Procedure</h1></a>
-        <a class="quick-links__link" href="/human-rights"><h1 class="quick-link__title">
+        <a class="quick-links__link hr-1" href="/human-rights"><h1 class="quick-link__title">
             Human Rights</h1></a>
-        <a class="quick-links__link" href="/security"><h1 class="quick-link__title">
+        <a class="quick-links__link sec-1" href="/security"><h1 class="quick-link__title">
             Security</h1></a>
-        <a class="quick-links__link" href="/economic-social"><h1 class="quick-link__title">
+        <a class="quick-links__link ecosoc-1" href="/economic-social"><h1 class="quick-link__title">
             Economic Social</h1></a>
-        <a class="quick-links__link" href="/political"><h1 class="quick-link__title">
+        <a class="quick-links__link pol-1" href="/political"><h1 class="quick-link__title">
             Political</h1></a>
       </section>
       <section class="founders-message__container">

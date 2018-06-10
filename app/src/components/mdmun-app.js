@@ -173,7 +173,9 @@ class MDMUNApp extends connect(store)(LitElement) {
         -webkit-box-align: center;
         -ms-flex-align: center;
         align-items: center;
-        background: #59b5a0; }
+        background: #59b5a0;
+        margin-top: 30px;
+       }
         .footer__links-container {
           display: -webkit-box;
           display: -ms-flexbox;

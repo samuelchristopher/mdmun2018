@@ -54,5 +54,89 @@
       "type": "script",
       "weight": 1
     }
+  },
+  "/human-rights": {
+    "src/components/mdmun-app.js": {
+      "type": "script",
+      "weight": 1
+    },
+    "src/components/human-rights-council-page.js": {
+      "type": "script",
+      "weight": 1
+    },
+    "node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js": {
+      "type": "script",
+      "weight": 1
+    }
+  },
+  "/security": {
+    "src/components/mdmun-app.js": {
+      "type": "script",
+      "weight": 1
+    },
+    "src/components/security-council-page.js": {
+      "type": "script",
+      "weight": 1
+    },
+    "node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js": {
+      "type": "script",
+      "weight": 1
+    }
+  },
+  "/economic-social": {
+    "src/components/mdmun-app.js": {
+      "type": "script",
+      "weight": 1
+    },
+    "src/components/economic-social-council-page.js": {
+      "type": "script",
+      "weight": 1
+    },
+    "node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js": {
+      "type": "script",
+      "weight": 1
+    }
+  },
+  "/political": {
+    "src/components/mdmun-app.js": {
+      "type": "script",
+      "weight": 1
+    },
+    "src/components/political-council-page.js": {
+      "type": "script",
+      "weight": 1
+    },
+    "node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js": {
+      "type": "script",
+      "weight": 1
+    }
+  },
+  "/founder-message": {
+    "src/components/mdmun-app.js": {
+      "type": "script",
+      "weight": 1
+    },
+    "src/components/founder-message.js": {
+      "type": "script",
+      "weight": 1
+    },
+    "node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js": {
+      "type": "script",
+      "weight": 1
+    }
+  },
+  "/rules-of-procedure": {
+    "src/components/mdmun-app.js": {
+      "type": "script",
+      "weight": 1
+    },
+    "src/components/rop-page.js": {
+      "type": "script",
+      "weight": 1
+    },
+    "node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js": {
+      "type": "script",
+      "weight": 1
+    }
   }
 }
