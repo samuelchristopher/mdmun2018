@@ -21,6 +21,26 @@ class RoPPage extends PageViewElement {
         .rules-category__title {
           text-align: center;
         }
+        .center-horizontally-container {
+          width: 100%;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column;
+        }
+
+        .space-bottom {
+          margin-bottom: 20px;
+        }
       </style>
       <section >
         <section class="header-card__container more-space">
@@ -51,6 +71,12 @@ shall have the right to rule out the points and motions they deem to be not cons
 They shall keep the committee in order and direct them towards consensus. The chair
 persons are in all time responsible to the Secretary General.</li>
           </ol>
+        </div>
+        <div class="center-horizontally-container">
+          <a href="https://drive.google.com/open?id=10dAnqevOpnzNc2IaAaE4SpMlrAlgQxyc" target="_blank" class="space-bottom button header-card__button">
+          <p class="button__text">view sample documents</p></a>
+          <a href="https://drive.google.com/open?id=16AUvjsoQkQmzcu3SbsA0t1R50NuuwdHe" target="_blank" class="button header-card__button">
+          <p class="button__text">view lexicon flowchart</p></a>
         </div>
       </section>
     `
