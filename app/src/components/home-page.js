@@ -144,7 +144,7 @@ class HomePage extends PageViewElement {
       .founders-message__short-text {
         text-align: center; }
 
-      .founders-message__gradient-cover {
+      /* .founders-message__gradient-cover {
         width: 100%;
         height: 70px;
         background: -webkit-gradient(linear, left bottom, left top, from(white), to(rgba(0, 212, 255, 0)));
@@ -152,7 +152,7 @@ class HomePage extends PageViewElement {
         background: -o-linear-gradient(bottom, white 0%, rgba(0, 212, 255, 0) 100%);
         background: linear-gradient(0deg, white 0%, rgba(0, 212, 255, 0) 100%);
         position: absolute;
-        bottom: 0; }
+        bottom: 0; } */
 
       .founders-message__button {
         margin: 20px 40px; }
@@ -191,7 +191,7 @@ class HomePage extends PageViewElement {
         </div>
         <div class="founders-message__text-container">
           <p class="founders-message__short-text">My name is Kimberley, I am a former student of Maktab Duli, Class of 2015, and I am also the Main Organizer of MD MUN 2016. Throughout my time in Maktab Duli and secondary school years, I have participated in many public speaking competitions and events, including being the title holder of Brunei's National Senior Level English Debate Competition 2015, however, some of my most memorable experiences through these years are my MUN experiences; which is why I was inspired to organize my very own.</p>
-          <div class="founders-message__gradient-cover"> </div>
+          <!-- <div class="founders-message__gradient-cover"> </div> -->
         </div><a class="button founders-message__button" href="/founder-message">
           <p class="button__text">view full message</p></a>
       </section>

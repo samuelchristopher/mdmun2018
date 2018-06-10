@@ -22,7 +22,6 @@ const council = (state = {}, action) => {
         HRMembers: action.data
       };
     case GET_SEC_CHAIRS:
-      console.log('sec chairs red')
       return {
         ...state,
         SECChairs: action.data
