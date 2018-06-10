@@ -175,8 +175,8 @@ class HomePage extends PageViewElement {
         Rules of Procedure</h1></a>
         <a class="quick-links__link" href="/human-rights"><h1 class="quick-link__title">
             Human Rights</h1></a>
-        <a class="quick-links__link" href="/security-council"><h1 class="quick-link__title">
-            Security Council</h1></a>
+        <a class="quick-links__link" href="/security"><h1 class="quick-link__title">
+            Security</h1></a>
         <a class="quick-links__link" href="/economic-social"><h1 class="quick-link__title">
             Economic Social</h1></a>
         <a class="quick-links__link" href="/political"><h1 class="quick-link__title">

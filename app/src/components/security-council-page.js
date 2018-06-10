@@ -8,7 +8,7 @@ store.addReducers({
 })
 import { SharedStyles } from './shared-styles.js';
 
-class HRCouncilPage extends PageViewElement {
+class SECCouncilPage extends PageViewElement {
   _render(props) {
     return html`
       ${SharedStyles}
@@ -31,27 +31,27 @@ class HRCouncilPage extends PageViewElement {
       </style>
       <section>
         <section class="header-card__container council__header">
-          <h1 class="council__header--title">Human Rights Council</h1>
+          <h1 class="council__header--title">Security Council</h1>
         </section>
         <div class="council__content-container">
          <div class="council__brief-summary-container">
           <h1 class="council__brief-summary__title">Brief Introduction</h1>
           <p class="council__brief-summary__text">
-          The Human Rights Council is an inter-governmental body within the United Nation system, responsible
-  for strengthening the promotion and protection of all human rights around the globe. The United Nation
-  Human Rights Council also addresses important thematic human rights issues such as freedom of
-  association and assembly, freedom of expression, freedom of belief and religion, women’s rights, LGBTQ
-  rights, and the rights of racial and ethnic minorities
+          The Security Council has primary responsibility under the United Nation Charter, for the maintainence of
+international peace and security. Under the Charter, all member states are obligated to comply with
+Council’s decisions. The Security Council takes the lead in determining the existence of a threat to the
+peace and act of aggression. It calls upon the parties to a dispute to settle it by peaceful means and
+recommends methods of adjustments or terms of settlement.
           </p>
          </div>
         </div>
         <div class="council__people-container">
-          <council-people category="chairs" hr=true></council-people>
-          <council-people category="members" hr=true></council-people>
+          <council-people category="chairs" sec=true></council-people>
+          <council-people category="members" sec=true></council-people>
         </div>
       </section>
     `
   }
 }
 
-window.customElements.define('hr-council-page', HRCouncilPage);
+window.customElements.define('sec-council-page', SECCouncilPage);

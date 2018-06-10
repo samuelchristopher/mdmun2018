@@ -219,7 +219,9 @@ class MDMUNApp extends connect(store)(LitElement) {
         <a selected?="${_page === 'topics'}" href="/topics">Topics</a>
         <a selected?="${_page === 'rules-of-procedure'}" href="/rules-of-procedure">RoP</a>
         <a selected?="${_page === 'human-rights'}" href="/human-rights">Human Rights</a>
-        <a selected?="${_page === 'view3'}" href="/view3">View Three</a>
+        <a selected?="${_page === 'security'}" href="/security">Security</a>
+        <a selected?="${_page === 'economic-social'}" href="/economic-social">Economic Social</a>
+        <a selected?="${_page === 'political'}" href="/political">Political</a>
       </nav>
     </app-header>
 
@@ -232,6 +234,9 @@ class MDMUNApp extends connect(store)(LitElement) {
         <a selected?="${_page === 'topics'}" href="/topics">Topics</a>
         <a selected?="${_page === 'rules-of-procedure'}" href="/rules-of-procedure">Rules of Procedure</a>
         <a selected?="${_page === 'human-rights'}" href="/human-rights">Human Rights</a>
+        <a selected?="${_page === 'security'}" href="/security">Security</a>
+        <a selected?="${_page === 'economic-social'}" href="/economic-social">Economic Social</a>
+        <a selected?="${_page === 'political'}" href="/political">Political</a>
       </nav>
     </app-drawer>
 
@@ -243,6 +248,9 @@ class MDMUNApp extends connect(store)(LitElement) {
       <rop-page class="page" active?="${_page === 'rules-of-procedure'}"></rop-page>
       <founder-message class="page" active?="${_page === 'founder-message'}"></founder-message>
       <hr-council-page class="page" active?="${_page === 'human-rights'}"></hr-council-page>
+      <sec-council-page class="page" active?="${_page === 'security'}"></sec-council-page>
+      <ecosoc-council-page class="page" active?="${_page === 'economic-social'}"></ecosoc-council-page>
+      <pol-council-page class="page" active?="${_page === 'political'}"></pol-council-page>
       <my-view404 class="page" active?="${_page === 'view404'}"></my-view404>
     </main>
 

@@ -8,7 +8,7 @@ store.addReducers({
 })
 import { SharedStyles } from './shared-styles.js';
 
-class HRCouncilPage extends PageViewElement {
+class POLCouncilPage extends PageViewElement {
   _render(props) {
     return html`
       ${SharedStyles}
@@ -31,27 +31,26 @@ class HRCouncilPage extends PageViewElement {
       </style>
       <section>
         <section class="header-card__container council__header">
-          <h1 class="council__header--title">Human Rights Council</h1>
+          <h1 class="council__header--title">Political Council</h1>
         </section>
         <div class="council__content-container">
          <div class="council__brief-summary-container">
           <h1 class="council__brief-summary__title">Brief Introduction</h1>
           <p class="council__brief-summary__text">
-          The Human Rights Council is an inter-governmental body within the United Nation system, responsible
-  for strengthening the promotion and protection of all human rights around the globe. The United Nation
-  Human Rights Council also addresses important thematic human rights issues such as freedom of
-  association and assembly, freedom of expression, freedom of belief and religion, women’s rights, LGBTQ
-  rights, and the rights of racial and ethnic minorities
+          The United Nations Deparment of Political Affairs (UNDPA) is a department of the Secretariat of the
+United Nations with the responsibility for monitoring and assessing global political developments and
+advising and assisting the UN Secretary General and his envoys in the peaceful prevention and
+revolution of conflict around the world.
           </p>
          </div>
         </div>
         <div class="council__people-container">
-          <council-people category="chairs" hr=true></council-people>
-          <council-people category="members" hr=true></council-people>
+          <council-people category="chairs" pol=true></council-people>
+          <council-people category="members" pol=true></council-people>
         </div>
       </section>
     `
   }
 }
 
-window.customElements.define('hr-council-page', HRCouncilPage);
+window.customElements.define('pol-council-page', POLCouncilPage);

@@ -8,7 +8,7 @@ store.addReducers({
 })
 import { SharedStyles } from './shared-styles.js';
 
-class HRCouncilPage extends PageViewElement {
+class ECOSOCCouncilPage extends PageViewElement {
   _render(props) {
     return html`
       ${SharedStyles}
@@ -31,27 +31,28 @@ class HRCouncilPage extends PageViewElement {
       </style>
       <section>
         <section class="header-card__container council__header">
-          <h1 class="council__header--title">Human Rights Council</h1>
+          <h1 class="council__header--title">Economic Social Council</h1>
         </section>
         <div class="council__content-container">
          <div class="council__brief-summary-container">
           <h1 class="council__brief-summary__title">Brief Introduction</h1>
           <p class="council__brief-summary__text">
-          The Human Rights Council is an inter-governmental body within the United Nation system, responsible
-  for strengthening the promotion and protection of all human rights around the globe. The United Nation
-  Human Rights Council also addresses important thematic human rights issues such as freedom of
-  association and assembly, freedom of expression, freedom of belief and religion, women’s rights, LGBTQ
-  rights, and the rights of racial and ethnic minorities
+          The Economic and Social Council is the principal body for coordination, policy review, policy dialogue
+and recommendations on economic, social and environmental issues, as well as implementation of
+internationally agreed development goals, it serves as the central mechanism for activities of the UN
+system and its specialized agencies in economic, social and environmental fields, surpervising subsidiary
+and expert bodies. It is the United Nations’ central platform for reflection, debate and innovative
+thinking on sustainable development.
           </p>
          </div>
         </div>
         <div class="council__people-container">
-          <council-people category="chairs" hr=true></council-people>
-          <council-people category="members" hr=true></council-people>
+          <council-people category="chairs" ecosoc=true></council-people>
+          <council-people category="members" ecosoc=true></council-people>
         </div>
       </section>
     `
   }
 }
 
-window.customElements.define('hr-council-page', HRCouncilPage);
+window.customElements.define('ecosoc-council-page', ECOSOCCouncilPage);
