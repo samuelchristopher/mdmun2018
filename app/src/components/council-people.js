@@ -74,12 +74,21 @@ class CouncilPeople extends connect(store)(LitElement) {
             font-weight: bold;
             text-transform: uppercase;
           }
+          .council__person {
+            margin: 20px 10px;
+          }
+          .council__person-info {
+            text-transform: uppercase;
+            color: #59b5a0;
+            font-weight: bold;
+            margin-top: 5px;
+          }
         </style>
         <p class="council__people-category">${props.category}</p>
         <ol>
         ${this._data.map((item) =>
           html`
-          <li class="council__person">${item.name}<span class="council__person-info">${item.info}</span></li>
+          <li class="council__person">${item.name}<br /><span class="council__person-info">${item.info}</span></li>
           `)}
         </ol>
     `;
