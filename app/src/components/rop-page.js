@@ -73,10 +73,12 @@ persons are in all time responsible to the Secretary General.</li>
           </ol>
         </div>
         <div class="center-horizontally-container">
+          <a href="https://drive.google.com/open?id=16AUvjsoQkQmzcu3SbsA0t1R50NuuwdHe" target="_blank" class="space-bottom button header-card__button">
+          <p class="button__text">view lexicon flowchart</p></a>
           <a href="https://drive.google.com/open?id=10dAnqevOpnzNc2IaAaE4SpMlrAlgQxyc" target="_blank" class="space-bottom button header-card__button">
           <p class="button__text">view sample documents</p></a>
-          <a href="https://drive.google.com/open?id=16AUvjsoQkQmzcu3SbsA0t1R50NuuwdHe" target="_blank" class="button header-card__button">
-          <p class="button__text">view lexicon flowchart</p></a>
+          <a href="https://drive.google.com/open?id=181hAaQropGZwVaoBFctJC_r0_6P0KdOC" target="_blank" class="button header-card__button">
+          <p class="button__text">view resolution format</p></a>
         </div>
       </section>
     `
