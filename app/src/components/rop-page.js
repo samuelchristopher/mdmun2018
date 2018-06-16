@@ -58,6 +58,10 @@ class RoPPage extends PageViewElement {
           padding: 0 20px 20px 20px;
         }
 
+        .rules-category__container > ol {
+          padding-left: 15px;
+        }
+
       </style>
       <section>
         <section class="header-card__container more-space">
