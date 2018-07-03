@@ -40,21 +40,17 @@ const SEC_CHAIRS = [
 
 const SEC_MEMBERS = [
   {name: 'Wong Sii Yuan', info: 'TURKEY'},
-  {name: 'Josclyn Wong', info: 'GHANA'},
   {name: 'Chong Jing Wen', info: 'FINLAND'},
   {name: 'Miza Razanah binti Mohaimim', info: 'AUSTRALIA'},
   {name: 'Samuel Paul Christopher', info: 'USA'},
   {name: 'Tan Kia Keng Jason', info: 'RUSSIA'},
   {name: 'Dk Noor Amal Shahirah Hazerah Bte Pg Noor A’malludin Shah ', info: 'CHAD'},
   {name: 'Lim Shin Hui', info: 'GERMANY'},
-  {name: 'Muhammad Wafiuddin Bin Aminuddin', info: 'EGYPT'},
   {name: 'Kon Thian Enn', info: 'IRAN'},
-  {name: 'Nurul Amal Asfarina Hassanah Saffiyah Athirah Muntassir', info: 'THAILAND'},
   {name: 'Farah Nurhaliza', info: 'CZECH REPUBLIC'},
   {name: 'Vibhusha Selvam Vinothini', info: 'NORTH KOREA'},
   {name: 'Hana Farhana Binti Haji Azman', info: 'UKRAINE'},
   {name: 'Yashpreet Singh', info: 'CHINA'},
-  {name: 'Sumaiya Binti Haji Hussin', info: 'SOMALIA'},
   {name: 'Stella Teoh Sze Pei', info: 'PHILLIPINES'}
 ];
 
