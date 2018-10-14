@@ -121,6 +121,10 @@ export const SharedStyles = html`
         .header-card__container {
           margin-top: 205px;
         }
+
+        .founder-message-page {
+          margin-top: 205px;
+        }
       }
 
       @media (min-width: 564px) {
@@ -128,6 +132,10 @@ export const SharedStyles = html`
           margin-top: 170px;
           margin-left: auto;
           margin-right: auto;
+        }
+
+        .founder-message-page {
+          margin-top: 205px;
         }
       }
 </style>
