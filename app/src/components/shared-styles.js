@@ -116,5 +116,19 @@ export const SharedStyles = html`
       opacity: .5;
       padding: 0 20px;
       margin: 10px auto; }
+
+      @media (min-width: 460px) {
+        .header-card__container {
+          margin-top: 205px;
+        }
+      }
+
+      @media (min-width: 564px) {
+        .header-card__container {
+          margin-top: 170px;
+          margin-left: auto;
+          margin-right: auto;
+        }
+      }
 </style>
 `;
